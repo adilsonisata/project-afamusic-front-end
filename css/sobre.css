@@ -1,0 +1,117 @@
+/*estilos para o pagina sobre*/
+*,
+*::before,
+*::after{
+	margin: 0;padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Times", arial, "serif";
+	line-height: 1.8rem;
+	
+}
+.container{
+	margin: 0 auto;
+	max-width: 960px;
+}
+p{
+
+}
+.nempresa{
+	background-color: rgb(202,202,192);
+}
+.compra{
+	height: 50px;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 10px 0;
+	background-color: rgba(100,100,255, 0.3);
+	color: rgb(0,0,255);
+	clear: both;
+}
+footer .plogo{
+	width:6rem;
+}
+figure {
+	box-sizing: border-box;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p{
+	text-align: justify;
+	text-indent: 20px;
+}
+ul,ol,dl{
+	margin-left:25px; 
+	list-style: circle;
+	display: inline-column;
+	text-indent: 20px;
+
+}
+body{
+}
+.ffundador{
+	float: right;
+	margin: 10px;
+
+}
+.fsede{
+	box-sizing: border-box;
+	width: 500px;
+	margin:10px auto;
+
+}
+.fsede figcaption,.ffundador figcaption{
+	text-align: center;
+
+}
+.fsede img, .ffundador img{
+	width: 100%;
+	height: auto;
+}
+.fsede img{
+	width: 100%;
+	height: auto;
+}
+#historia{
+	border-bottom: 2px solid rgb(202,202,192)
+}
+
+.rodape{
+	position: relative;
+	vertical-align: center;
+	opacity: 1;
+	color:purple;
+	padding:15px 4px 0 4px;
+
+
+}
+footer.rodape img#fl{  
+	display: inline;
+} 
+footer .redesocias{
+	float: right;
+	list-style: none;
+	
+}
+footer a.busca{
+	float: right;
+	padding: 5px;right:4px;
+
+}
+footer.rodape > p{
+	display: inline;
+	margin-left:190px;
+	text-transform: uppercase;
+	vertical-align: top;
+	clear: right;
+	
+}
+footer .redesocias li{
+	position: relative;
+	display: inline-block;	
+}
+
+
+
+
+

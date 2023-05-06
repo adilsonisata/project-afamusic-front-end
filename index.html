@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<title>AdiMusic </title><!---
+	<link rel="stylesheet" type="text/css" href="asset/bootstrap4.4.1/css/bootstrap.css">
+	-->
+	<link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="asset/Ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/inicio.css">
+</head>
+<body>
+<!-- ***************** Início do body *************** -->
+
+<header><!-- ****** início do header ****** -->
+	<div class="container">
+		<nav><!-- *** início da nav.navbar *** -->
+			<div class=" nav-brand">
+				<a href=""><img src="img/playcircle.png" alt="logo"></a>
+			</div><!-- ** fim do div.nav-brand ** -->
+			<div class="col12 menu-icons open ">
+					<i class="fa fa-bars"> </i>
+			</div> 
+			<ul class="menu inline nav-list">
+				<div class="menu-icons close">
+					<i class="fa fa-close"></i>
+				</div>
+				<li class="nav-item "><a href="#home " class="nav-link current n1">
+				<i class="fa fa-home"></i>
+				home</a></li>
+				<li class="nav-item "><a class="nav-link n2" href="#nartistas">
+				artistas</a></li>
+				<li class="nav-item"><a class="nav-link n3" href="#nalbuns"> álbuns</a></li>
+				<li class="nav-item"><a class="nav-link n4" href="#nmusicas"> músicas</a></li>
+				<li class="nav-item"><a class="nav-link n5" href="#nlistas"> listas</a></li>
+			</ul>
+		</nav><!-- *** fim da nav.navbar *** -->
+	</div><!-- *** fim da div.container *** -->
+</header><!-- ****** fim do header ****** -->
+
+<main>
+	<section id="home" class=" hero">
+		<div class="container ">
+			<div class=" main-message ">
+				<h3>Escute bom som</h3>
+				<h1>Artistas</h1>
+				<p>
+					Artistas renomados da lusofonia. África brilha com os diferentes sucessos musicas, que representam a cultura de África e transcende oceanos e cores raciais com o Semba, kizomba, Kuduro e Afró...
+				</p>
+				<div class="cta">
+					<a href="#" class="btn">ouvir agora
+					</a>
+				</div>
+			</div>		
+		</div>
+	</section><!-- ** fim section.container ** -->
+
+	<section id="nartistas" class="row experiencia">
+		<div class="container ">
+			<div class="title-heading ">
+				<h3>Músicas Afró</h3>
+				<h1>Artistas do momento</h1>
+				<p>Fazem estrondos, com um ritmo dançante e bits afro
+				 faz sucesso nas redes socias e nos becos da cidade!
+				</p>
+			</div>
+
+			<div class="atives-grid">
+				<div class="atives-grid-item grid1">
+					<i class="icon ion-compass"></i>
+					<h1 class="card-title">Rui Orlando</h1>
+					<p>Cantor, compositor Angolano, conhecido pelos sucessos com a música - "".</p>
+				</div>
+				<div class="atives-grid-item grid2">
+					<i class="icon ion-bonfire"></i>
+					<h1 class="card-title">Noite Dia</h1>
+					<p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, in, unde. ? </p>
+				</div>
+					
+				<div class="atives-grid-item grid3" >
+					<i class="ion ion-music-note"></i>
+					<h1>Gerilson Israel</h1>
+					<p>Nesciunt magni cumque, aspernatur ipsum nostrum veritatis iusto s unde quos vitae esse corporis, dolores vel cum animi magni adipisci facilis!</p>
+				</div>
+				<div class="atives-grid-item grid4"><i class="icon ion-star"></i>
+					<h1 class="card-title">C4 Pedro</h1>
+					<p>molestias, repellendus blanditiis doloribus nobis, facilis error nulla in recusandae nemo voluptatem quod labore. </p>
+				</div>
+				<div class="atives-grid-item grid5">
+					<i class="icon ion-bookmark"></i>
+					<h1 class="card-title">Bruna Tatiana</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="atives-grid-item grid6">
+					<i class="icon ion-play"></i>
+					<h1 class="card-title">Força Suprema</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>	
+			</div>
+		</div>
+	</section><!-- ** section.row.experiencia ** -->
+
+	<section id="nalbuns" class="row testemunhas ">
+			<div class="container ">
+				<div class="testemunha ">
+					<div class="testemunha-text-box">
+						<p>
+						 É muito cool encontrar estes sons aqui, pra todos que amam boas músicas de certeza que encontras aqui.
+						</p><i class="icon ion-quote"></i>
+					</div>
+					<div class="testemunho-cliente">
+						<img src="asset/img/adi3.jpg" alt="cliente">
+						<h1>Adilson Isata</h1>
+					</div>
+				</div>
+			</div>
+	</section><!-- ** div.row ** -->
+	
+	<section >
+		<h3>Selecione O Artista:</h3>
+		<form action="serverajax.php" method="GET">
+			<div class="elem">
+				<select name="artista" id="listaArtista">
+					<option value="RO">Rui Orlando</option>
+					<option value="GI">Gerilson Israel</option>
+					<option value="AJ">Ana Joyce</option>
+					<option value="ND">Noite Dia</option>
+				</select>
+				<p><input type="submit" value="buscar Músicas" id="btnsubmit" /></p>
+			</div>
+			<div class="elem" id="musicas">
+				<p></p>
+			</div>
+		</form>
+	
+	</section>
+
+	<section id="nmusicas" class="sobrenos">
+		<div class="container">
+				
+			<div class="title-heading ">
+				<h3>Vê as Músicas mais recentes
+				</h3>
+				<h1>Artistas do mês</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit!
+				</p>
+			</div>
+			<div class="sobrenos-grid">
+				<div class="sobrenos-grid-item">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing,adipisci recusandae velit ut explicabo libero doloremque omnis quidem vitae, suscipit animi laudantium consectetur rem. Culpa, nemo.
+					</p>
+				</div>
+				<div class="sobrenos-grid-item">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing,adipisci recusandae velit ut explicabo libero doloremque omnis quidem vitae, suscipit animi laudantium consectetur rem. Culpa, nemo.
+					</p>
+				</div>	
+			</div>
+			<a href="#" class="btn">saber mais</a>
+		</div>
+	</section><!-- ** fim section.sobrenos ** -->
+
+	<section id="nlistas" class="cantatos">
+		<div class="container">
+			<div>
+				<form action="">
+						<fieldset id="aidusuario"><legend>identificação de usuário</legend><p>
+						<label for="anome">nome
+							<input placeholder="seu nome:" type="text"name="anome">
+						</label></p>
+						<p>
+						<label for="aemail">email
+							<input placeholder="seu email:" type="email"name="aemail">
+						</label></p><p>
+						
+						<label for="aassunto">sobre
+							<input placeholder="assunto:" type="text"name="aassunto">
+						</label></p>
+						
+						</fieldset>
+						<textarea name="amensagem" id=""placeholder="mensagem" cols="28" rows="8"></textarea><div>
+						<input class="btn" type="submit"name="aenviar" value="Enviar"></div>
+				</form>
+			</div>
+		</div>
+	</section><!-- ** fim section.contatos ** -->
+
+	<section id="inscrevase">
+		<div class="container">
+				<div class="col6">
+					<form action="">
+						<fieldset id="subscrever"><legend> subscrever-se</legend>
+						<input type="email"placeholder="digite seu email...">
+						<input class="btn" type="submit"value="Seguir">
+						</fieldset>
+					</form>
+				</div>
+		</div>
+	</section>
+	<!-- ** fim section.inscrevase** -->
+</main>
+
+<footer class="rodape">
+	<div class="container">
+			<ol class="rodape-inline">
+				<li><a href="">sobre</a></li>
+				<li class="rodape-pading"><a href="">contactos</a></li>
+				<li><a href="#inscrevase">inscrever-se</a></li>
+			</ol>
+		<div class="col12">
+			<span><p>&copy; 2021 <i class="fas fa-cicle"></i> AdiMusic. Todos os direitos reservados.</p></span>
+		</div>
+	</div>
+</footer><!-- ** fim footer.rodape ** -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//<![CDATA[
+/*
+Função que adicione ou remove classe(active) através do AddEventListener 
+*/
+	const selectElement = (s) => document.querySelector(s);
+	//
+	selectElement('.open').addEventListener('click', () => {
+		selectElement('.nav-list').classList.add('active');
+	});
+	//
+	selectElement('.close').addEventListener('click', () => {
+		selectElement('.nav-list').classList.remove('active');
+	});
+
+/*
+Função que adicione ou remove classe(current) através do AddEventListener 
+*/
+
+
+  
+  //]]
+
+</script>
+
+<!-- ***************** Fim do Body **************** 
+<script src="asset/bootstrap4.4.1/js/jquery.js"></script>
+<script src="asset/bootstrap4.4.1/js/popper.js"></script>
+<script src="asset/bootstrap4.4.1/js/bootstrap.js"></script>
+-->
+</body>
+</html>

@@ -1,0 +1,464 @@
+/*meu arquivo de inicio de css*/
+/*estilos globais*/
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+html{
+	font-family: 'Nunito', sans-serif;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+p{
+	font-size: 1.6rem;
+}
+img{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+section{
+	padding: 5rem 0;
+}
+input{
+	margin: 2rem;
+}
+fieldset{
+	position: 2rem 0;
+	margin: 3rem 1rem;
+}
+
+form {
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 2rem;
+	color: #fafafa;
+	padding: .8rem 1rem;
+	border-radius:10px;
+	border: 2px solid #eb648c;
+	background: linear-gradient(135deg, rgba(49,24,131, 0.9) 0%, rgba(72,56,149, 0.8) 100%),
+	url("../asset/img/img_forest.jpg") center no-repeat;
+	background-size :cover;
+	position: relative;
+}
+fieldset legend{
+	margin: 1rem;
+	padding: .5rem .1rem;
+	
+}
+
+/* estilo do header */
+header{
+	width:100%;
+	height: 5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.container{
+	width: 100%;
+	max-width: 90rem;
+	margin: 0 auto;
+	padding:0 1.5rem;
+
+}
+nav{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.nav-brand{
+	width: 2rem;
+}
+.menu-icons i{
+	font-size: 2.5rem;
+	color: #fafafa;
+	cursor: pointer;
+}
+.categoria ul.list-branca li a{
+	color: #fff;
+}
+.close i{
+	color: #eb648c;
+}
+.nav-list{
+	width: 25rem;
+	height: 100vh;
+	background-color: #d7d4ed;
+	position: fixed;
+	top: 0;
+	right: -26rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1500;
+	transition: all 650ms ease-in-out;
+
+}
+.nav-list.active{
+	right: 0;
+}
+.close{
+	position: absolute;
+	top: 1rem;
+	left: 1.5rem;
+}
+.nav-item{
+	margin:1.5rem 0;
+}
+.nav-link{
+	font-size:1.6rem;
+	text-transform: uppercase;
+	color: rgba(0,0,0,.7);
+}
+
+/*hero*/
+.hero{
+	width:100%;
+	height: 80vh;
+	background: linear-gradient(135deg, rgba(49,24,131, 0.9) 0%, rgba(72,56,149, 0.8) 100%),
+	url("../asset/img/img_forest.jpg") center no-repeat;
+	background-size :cover;
+	position: relative;
+}
+
+.hero::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 100%;
+	height: 4.7rem;
+	background: url("../asset/img/exep-wave-small.png") center no-repeat;
+	background-size: cover; 
+}
+.main-message{
+	width: 100%;
+	max-width: 50rem;
+	color: #fafafa;
+	text-transform: uppercase;
+	transform: translateY(20%);
+}
+.main-message h3{
+	font-size:1.6rem;
+}
+.main-message h1{
+	font-family:'Aldrich', sans-serif;
+	font-size:4rem;
+	margin: 1rem 0; 
+}
+.main-message p, .title-heading p{
+	text-transform: lowercase;
+}
+.btn{
+	background-color: #eb648c;
+	border-radius: 2rem;
+	color: #fafafa;
+	display: inline-block;
+	margin-top: 2rem;
+	padding: 1rem 2.5rem;
+	text-transform: uppercase;
+	transition: background-color 650ms;
+}
+.btn:hover{
+	background-color: #ce587b;
+}
+/*experiencia*/
+.experiencia{
+	padding: 0;
+}
+.title-heading{
+	text-align:center;
+	text-transform:uppercase;
+	margin-bottom: 10rem;
+	color:rgba(0,0,0, .7);
+}
+.title-heading h3{
+	font-size:1.4rem;
+}
+.title-heading h1{
+	font-family:'Aldrich', sans-serif;
+	font-size: 2rem;
+	margin:.5rem 0 1rem;
+}
+.atives-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-gap:2.5rem;
+}
+.atives-grid-item{
+	height: 40rem;
+	padding: 5rem;
+	color: #fafafa;
+	position: relative;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	cursor:pointer;
+	z-index: 1;
+}
+.atives-grid-item::before{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background-image: linear-gradient(135deg, rgba(49,24,131, 0.9) 0%, rgba(72,56,149, 0.8) 100%);
+	z-index: -1;
+}
+.atives-grid-item i{
+	font-size: 4rem;
+	color:#eb648c; 
+}
+.atives-grid-item h1{
+	font-family:'Aldrich', sans-serif;
+	font-size:1.7rem;
+	text-transform: uppercase;
+	margin:2rem 0;
+}
+.grid1{
+	background: url("../asset/img/img_sound.jpg") center no-repeat;
+}
+.grid2{
+	background: url("../asset/img/img_ny.jpg") center no-repeat;
+}
+.grid3{
+	background: url("../asset/img/img_mountains.jpg") center no-repeat;
+}
+.grid4{
+	background: url("../asset/img/img_fjords.jpg") center no-repeat;
+}
+.grid5{
+	background: url("../asset/img/img_corniglia.jpg") center no-repeat;
+}
+.grid6{
+	background: url("../asset/img/img_exep_1.jpg") center no-repeat;
+}
+
+
+/*testemunhas*/ 
+.testemunhas{
+	width: 100%;
+	height: 80vh;
+	background: linear-gradient(135deg, rgba(49,24,131, 0.9) 0%, rgba(72,56,149, 0.8) 100%),
+	url("../asset/img/img_forest.jpg") center no-repeat fixed;
+	background-size:cover;
+	position: relative;
+}
+
+.testemunhas::before{
+	content: "";
+	position: absolute;
+	top:-3px;
+	left:0;
+	width:100%;
+	height: 4.7rem;
+	background: url("../asset/img/exep-wave-small-release.png") center no-repeat;
+	background-size:cover;
+}
+.testemunha{
+	width: 100%;
+	color: #fafafa;
+	position: absolute;
+	top:55%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	text-align:center;
+}
+.testemunha-text-box{
+	padding:0 1.5rem;
+	margin-bottom:2rem;
+	position:relative;
+}	
+.testemunha-text-box i{
+	position:absolute;
+	top:-5rem;
+	left:50%;
+	transform:translateX(-50%);
+	font-size:5rem;
+	color: #eb648c;
+	opacity: .5;
+	z-index: -1;
+}
+.testemunho-cliente img{
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	border:3px solid #eb648c;
+}
+/* sobrenos*/
+.sobrenos-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-gap:2.5rem;
+	margin-bottom: 2rem;
+}
+.sobrenos-grid-item p{
+	color:rgba(0,0,0,0.7);
+}
+/*footer*/
+footer{
+	padding: 2.5rem 0;
+	background-color:#d7d4ed;
+	text-align: center;
+	color:rgba(0,0,0,0.7);
+}
+footer ol{
+	list-style:none; 
+}
+footer ol li{
+	display: inline-block;
+}
+footer ol li a{
+	font-family: 'Aldrich',sans-serif;
+	font-size:1.7rem;
+	text-transform: uppercase;
+	color:#422F8F;
+	cursor: pointer;
+}
+footer .rodape-pading{
+	padding: 0 .3rem;
+}
+
+/*Media queries*/
+@media screen and (min-width: 350px){
+	.main-message{
+		transform: translateY(40%);
+
+	}
+
+}
+
+@media screen and (min-width: 470px){
+	.hero::before{
+		height: 9.4rem;
+		background: url("../asset/img/wave-medium.png");
+		background-size: cover;
+	}
+
+	.testemunhas::before{
+		height: 9.4rem;
+		background: url("../asset/img/bwave_invert_medium.png");
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 700px){
+	header{
+		height: 8rem;
+	}
+
+	.nav-brand{
+		width: 3.5rem;
+	}
+
+	.nav-list{
+		width: initial;
+		height: initial;
+		background-color: transparent;
+		position: initial;
+		top:initial;
+		right: initial;
+		flex-direction: row;
+		transition: initial;
+	}
+
+	.menu-icons{
+		display: none;
+	}
+
+	.nav-item{
+		margin: 0 2.5rem;
+	}
+
+	.nav-link,
+	.current{
+		color:#fafafa;
+		position: relative;
+		font-size: 1.3rem;
+	} 
+
+	.nav-link:visited{
+		content: "";
+		position: absolute;
+		left:0;
+		bottom:-.5rem;
+		background-color: #eb648c;
+		width: 100%;
+		height: 2px;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 650ms;
+	}
+
+	.nav-link::before,
+	.current::before{
+		content: "";
+		position: absolute;
+		left:0;
+		bottom:-.5rem;
+		background-color: #eb648c;
+		width: 100%;
+		height: 2px;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 650ms;
+	} 
+
+	.current::before{
+		transform: scaleX(1);
+	}
+	
+	.nav-link:hover::before{
+		transform: scaleX(1);
+	}
+
+	.hero{
+		height: 60vh;
+	}
+
+	.main-message{
+		transform: translateY(70%);
+	}
+
+	.title-heading h1{
+		font-size: 2.5rem;
+	}
+
+}
+
+@media screen and (min-width: 950px){
+	.hero::before{
+		height: 22.7rem;
+		background: url("../asset/img/wave-large.png");
+		background-size: cover;
+	} 
+	
+	.testemunhas::before{
+		height: 22.7rem;
+		background: url("../asset/img/wave-invert-large.png");
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.hero{
+		height: 75vh;
+	}
+}
